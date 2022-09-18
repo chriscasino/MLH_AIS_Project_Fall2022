@@ -11,12 +11,19 @@
     }
     
     body {
-    background-image: url(images/peach_preamble.png);
+    background-image: url(images/menu_pic.png);
     background-repeat: no-repeat;
     background-size: cover;
     }
     </style>
-    
+    .container {
+      width: 800px;
+      max-width: 80%;
+      background-color: white;
+      padding: 10px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px 2px;
+  }
     </head>
     <body>
 
