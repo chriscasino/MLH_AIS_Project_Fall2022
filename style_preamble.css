@@ -1,16 +1,38 @@
-<style type="text/css">
-html,
-body {
-height: 100%;
-}
+ *, *::before, *::after {
+    box-sizing: border-box;
+    /*font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
+    font-family: Arial; /* These fonts that I have downloaded are not working!*/
+    }
 
-body {
-background-image: url(images/peach_preamble.png);
-background-repeat: no-repeat;
-background-size: cover;
-}
-</style>
+    <style type="text/css">
+    html,
+    body {
+    height: 100%;
+    }
+    
+    body {
+    background-image: url(images/peach_preamble.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    </style>
+    
+    </head>
+    <body>
 
-</head>
-<body>
+    .tiledBackground {
+        background-image:"style_preamble.css";
+        background-size: 50px;
+        width: 100px;
+        height: 100px;
+        border: 2px solid;
+        color: pink;
+      }
+      
+    
+    /*div {
+            width: 200px;
+            word-break: break-all;
+            white-space: normal;
+        }*/
 
