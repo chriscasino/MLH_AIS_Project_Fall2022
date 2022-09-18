@@ -140,18 +140,18 @@ const textNodes = [
   },
   {
     id: 9,
-    text: 'You’re a cop in NYC. You see that Bowser and his friends are driving at 85 mph, which so not the normal speed limit. What will you do?',
+    text: 'Mario decides to sit back and relax during this fishing trip. He pops open a can of soda and chugs it down. Once the container was empty, he threw the can into the lake. What should Princess Peach and Rosalina do?',
     options: [
       {
-        text: 'Stop them and tell them to take their cool kid wannabe vibes to the subway instead',
+        text: 'Have a Koopa on your boat to get the can, then tell Mario to never do that again',
         nextText: 10
       },
       {
-        text: 'Hop in your patrol car and jump over Bowser and his friends"’ cars',
+        text: 'Kick Mario out of the boat and tell him to swim his way home to the Mushroom Kingdom',
         nextText: 11
       },
       {
-        text: 'Fit Bowser and all of his friends into your patrol car and make sure they fit',
+        text: 'Make Mario dance to the Baby Shark song, hoping that will save the fishes from his empty can of beer',
         nextText: 12
       },
 
