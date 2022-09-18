@@ -1,20 +1,20 @@
 const textElement = document.getElementById('text')
 const optionButtonsElement = document.getElementById('option-buttons')
- 
+
 let state = {}
- 
+
 function startGame() {
   state = {}
   showTextNode(1)
 }
- 
+
 function showTextNode(textNodeIndex) {
   const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
   textElement.innerText = textNode.text
   while (optionButtonsElement.firstChild) {
     optionButtonsElement.removeChild(optionButtonsElement.firstChild)
   }
- 
+
   textNode.options.forEach(option => {
     if (showOption(option)) {
       const button = document.createElement('button')
@@ -25,11 +25,11 @@ function showTextNode(textNodeIndex) {
     }
   })
 }
- 
+
 function showOption(option) {
   return option.requiredState == null || option.requiredState(state)
 }
- 
+
 function selectOption(option) {
   const nextTextNodeId = option.nextText
   if (nextTextNodeId <= 0) {
@@ -38,7 +38,7 @@ function selectOption(option) {
   state = Object.assign(state, option.setState)
   showTextNode(nextTextNodeId)
 }
- 
+
 const textNodes = [
   {
     id: 1,
@@ -55,8 +55,8 @@ const textNodes = [
       {
         text: 'Find Hoot and cook him for dinner as revenge',
         nextText: 4
-      },  
- 
+      },
+
     ]
   },
   {
@@ -104,8 +104,8 @@ const textNodes = [
       {
         text: 'Actually be nice for once and clean up after Mario’s mess',
         nextText: 8
-      },  
- 
+      },
+
     ]
   },
   {
@@ -154,7 +154,7 @@ const textNodes = [
         text: 'Fit Bowser and all of his friends into your patrol car and make sure they fit',
         nextText: 12
       },
- 
+
     ]
   },
   {
@@ -196,7 +196,7 @@ const textNodes = [
         nextText: -1
       }
     ]
-  },      
+  },
 ]
- 
+
 startGame()
